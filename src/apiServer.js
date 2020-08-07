@@ -39,7 +39,6 @@ server.post('/resetpassword', function(req, res) {
 });
 
 server.use(router);
-const port = 5050;
-server.listen(port, () => {
+server.listen(process.env.PORT || 5000, () => {
     console.log(`JSON Server is running on port ${port}`);
 });
