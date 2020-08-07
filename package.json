@@ -1,0 +1,24 @@
+{
+  "name": "digitalskillsjsonserver",
+  "version": "1.0.0",
+  "description": "holds the json server for level 15 of the digital skills assessment app",
+  "main": "apiServer.js",
+  "scripts": {
+    "start": "npm run start:api",
+    "prestart:api": "node src/createMockDb.js",
+    "start:api": "node src/apiServer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "Ann Ciesla",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.16.1",
+    "jwt-simple": "^0.5.6"
+  }
+}
