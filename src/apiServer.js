@@ -39,6 +39,6 @@ server.post('/resetpassword', function(req, res) {
 });
 
 server.use(router);
-server.listen(process.env.PORT || 5000, () => {
+server.listen(process.env.PORT, () => {
     console.log(`JSON Server is running`);
 });
